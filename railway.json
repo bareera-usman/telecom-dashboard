@@ -10,14 +10,3 @@
     "restartPolicyMaxRetries": 10
   }
 }
-```
-
-5. Scroll down, click **"Commit new file"**
-
----
-
-### **Option 2: Create Procfile (Alternative)**
-
-Or create a file named `Procfile` (no extension):
-```
-web: uvicorn api:app --host 0.0.0.0 --port $PORT
