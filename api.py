@@ -22,7 +22,12 @@ app = FastAPI(title="Telecom Dashboard API")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://telecom-dashboard.vercel.app",
+        "https://telecom-dashboard-bareera-usmans-projects.vercel.app",
+        "https://*.vercel.app",
+        "http://localhost:3000"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
