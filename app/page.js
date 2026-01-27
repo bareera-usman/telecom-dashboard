@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import { Upload, Users, FileText, Trash2, AlertCircle, CheckCircle, BarChart3, PieChart, Activity, TrendingUp } from 'lucide-react';
 
-const API_BASE = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app') 
+const API_BASE = 'https://telecom-dashboard-production.up.railway.app';
   ? 'https://telecom-dashboard-production.up.railway.app' 
   : process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
